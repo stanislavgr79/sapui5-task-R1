@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="dummy.firstapp.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page
+        id="main"
+        title="{i18n>homePageTitle}">
+        <landmarkInfo>
+			<PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="{i18n>Main_rootLabel}"
+				contentRole="Main"
+				contentLabel="{i18n>Main_contentLabel}"
+				headerRole="Banner"
+				headerLabel="{i18n>Main_headerLabel}"/>
+		</landmarkInfo>
+        <content>
+            <mvc:XMLView viewName="dummy.firstapp.view.HelloPanel" />
+            <mvc:XMLView viewName="dummy.firstapp.view.InvoiceList" />
+        </content>
+    </Page>
+</mvc:View>
